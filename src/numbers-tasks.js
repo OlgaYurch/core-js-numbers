@@ -144,7 +144,7 @@ function parseNumberFromString(value) {
 }
 
 /**
- * -!!! DON'T PASS !!!- Returns a diagonal length of the rectangular parallelepiped given by its sides a,b,c.
+ * ++ Returns a diagonal length of the rectangular parallelepiped given by its sides a,b,c.
  *
  * @param {number} a
  * @param {number} b
@@ -156,8 +156,8 @@ function parseNumberFromString(value) {
  *   3,3,3   => 5.196152422706632
  *   1,2,3   => 3.741657386773941
  */
-function getParallelepipedDiagonal(/* a, b, c */) {
-  throw new Error('Not implemented');
+function getParallelepipedDiagonal(a, b, c) {
+  return Math.sqrt(a ** 2 + b ** 2 + c ** 2);
 }
 
 /**
@@ -179,6 +179,10 @@ function getParallelepipedDiagonal(/* a, b, c */) {
  */
 function roundToPowerOfTen(/* num, pow */) {
   throw new Error('Not implemented');
+  /* if (pow === 0) {
+    return num;
+  }
+  return Math.round(num * 10 ** pow) / 10 ** pow; */
 }
 
 /**
@@ -222,6 +226,10 @@ function isPrime(n) {
  */
 function toNumber(/* value, def */) {
   throw new Error('Not implemented');
+  /* if (typeof Number.isNaN(value) === 'number') {
+    return Number(value);
+  }
+  return def; */
 }
 
 /**
