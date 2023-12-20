@@ -388,7 +388,7 @@ function toPrecision(/* number, precision */) {
 }
 
 /**
- * -!!! DON'T PASS !!!- Returns the primitive value of a Number object.
+ * ++ Returns the primitive value of a Number object.
  *
  * @param {Number} number
  * @return {number}
@@ -397,8 +397,8 @@ function toPrecision(/* number, precision */) {
  * new Number(5) => 5
  * Number(-5)    => -5
  */
-function getNumberValue(/* number */) {
-  throw new Error('Not implemented');
+function getNumberValue(number) {
+  return number.valueOf();
 }
 
 /**
