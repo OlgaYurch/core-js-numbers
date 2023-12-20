@@ -600,7 +600,6 @@ function getRandomInteger(/* min, max */) {
  * 3, 4 => 5
  */
 function getHypotenuse(a, b) {
-  /* throw new Error('Not implemented'); */
   return Math.hypot(a, b);
 }
 
