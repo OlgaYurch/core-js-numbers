@@ -402,7 +402,7 @@ function getNumberValue(/* number */) {
 }
 
 /**
- * -!!! DON'T PASS !!!- Returns a boolean value indicating whether the parameter is a number or not.
+ * ++ Returns a boolean value indicating whether the parameter is a number or not.
  *
  * @param {number} number
  * @return {boolean}
@@ -416,8 +416,8 @@ function getNumberValue(/* number */) {
  * 5        => true
  * '5'      => false
  */
-function isNumber(/* number */) {
-  throw new Error('Not implemented');
+function isNumber(number) {
+  return Number.isFinite(number);
 }
 
 /**
