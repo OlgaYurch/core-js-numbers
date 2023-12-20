@@ -421,7 +421,7 @@ function isNumber(/* number */) {
 }
 
 /**
- * -!!! DON'T PASS !!!- Returns a boolean value indicating whether a number is an integer or not.
+ * ++ Returns a boolean value indicating whether a number is an integer or not.
  *
  * @param {number} number
  * @return {boolean}
@@ -431,8 +431,8 @@ function isNumber(/* number */) {
  * 5.1  => false
  * '5'  => false
  */
-function isInteger(/* number */) {
-  throw new Error('Not implemented');
+function isInteger(number) {
+  return Number.isInteger(number);
 }
 
 /**
@@ -447,6 +447,10 @@ function isInteger(/* number */) {
  */
 function getFloatOnString(/* str */) {
   throw new Error('Not implemented');
+  /* if (str === Number.parseFloat(str)) {
+    return Number.parseFloat(str);
+  }
+  return NaN; */
 }
 
 /**
@@ -465,6 +469,10 @@ function getFloatOnString(/* str */) {
  */
 function getIntegerOnString(/* str, base */) {
   throw new Error('Not implemented');
+  /* if (Number.toString(base) === Number.isInteger(str)) {
+    return parseInt(str, base);
+  }
+  return NaN; */
 }
 
 /**
