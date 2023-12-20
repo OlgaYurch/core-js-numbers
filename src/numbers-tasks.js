@@ -436,7 +436,7 @@ function isInteger(number) {
 }
 
 /**
- * -!!! DON'T PASS !!!- Returns a floating point number or, if the number cannot be parsed from the argument, returns NaN.
+ * ++ Returns a floating point number or, if the number cannot be parsed from the argument, returns NaN.
  *
  * @param {string} str
  * @return {number | NaN}
@@ -445,12 +445,8 @@ function isInteger(number) {
  * '4.567abcdefgh' => 4.567
  * 'abcdefgh'      => NaN
  */
-function getFloatOnString(/* str */) {
-  throw new Error('Not implemented');
-  /* if (Number.parseFloat(str)) {
-    return Number.parseFloat(str);
-  }
-  return NaN; */
+function getFloatOnString(str) {
+  return Number.parseFloat(str);
 }
 
 /**
