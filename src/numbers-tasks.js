@@ -89,7 +89,7 @@ function getLinearEquationRoot(a, b) {
 }
 
 /**
- * -!!! DON'T PASS !!!- Returns an angle (in radians) between two vectors given by xi and yi,
+ * ++ Returns an angle (in radians) between two vectors given by xi and yi,
  * coordinates in Cartesian plane.
  * See details https://en.wikipedia.org/wiki/Euclidean_vector#Representations
  *
@@ -106,8 +106,7 @@ function getLinearEquationRoot(a, b) {
  *   (0,1) (0,1)     => 0
  */
 function getAngleBetweenVectors(x1, y1, x2, y2) {
-  /* throw new Error('Not implemented'); */
-  return Math.atan2(y2 - y1, x2 - x1);
+  return Math.abs(Math.atan2(y1, x1) - Math.atan2(y2, x2));
 }
 
 /**
