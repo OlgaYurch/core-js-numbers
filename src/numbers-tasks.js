@@ -612,7 +612,7 @@ function getHypotenuse(a, b) {
 }
 
 /**
- * -!!! DON'T PASS !!!- Returns count of odd numbers from zero to the resulting number.
+ * ++ Returns count of odd numbers from zero to the resulting number.
  * The resulting number is taken into account.
  *
  * @param {number} number
@@ -624,15 +624,8 @@ function getHypotenuse(a, b) {
  * 10 => 5
  * 15 => 8
  */
-function getCountOfOddNumbers(/* number */) {
-  throw new Error('Not implemented');
-  /* let numberOdd = 0;
-  for (let i = 1; i <= number; i += 1) {
-    if (i >= 0 && i % 2 !== 0) {
-      numberOdd += 1;
-    }
-  }
-  return numberOdd; */
+function getCountOfOddNumbers(number) {
+  return Math.round(Math.abs(number) / 2);
 }
 
 module.exports = {
