@@ -207,7 +207,7 @@ function isPrime(n) {
 }
 
 /**
- * -!!! DON'T PASS !!!- Tries to convert value to number and returns it if conversion was successful;
+ * ++ Tries to convert value to number and returns it if conversion was successful;
  * otherwise returns default value passed as a second argument.
  *
  * @param {any} value
@@ -221,12 +221,11 @@ function isPrime(n) {
  *   toNumber(42, 0) => 42
  *   toNumber(new Number(42), 0) => 42
  */
-function toNumber(/* value, def */) {
-  throw new Error('Not implemented');
-  /* if (typeof Number.isNaN(value) === 'number') {
+function toNumber(value, def) {
+  if (Number.isNaN(Number(value)) === false) {
     return Number(value);
   }
-  return def; */
+  return def;
 }
 
 /**
