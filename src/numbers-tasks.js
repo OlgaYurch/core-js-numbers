@@ -38,7 +38,7 @@ function getCircleCircumference(radius) {
 }
 
 /**
- * -!!! DON'T PASS !!!- Returns an average of two given numbers.
+ * ++ Returns an average of two given numbers.
  *
  * @param {number} value1
  * @param {number} value2
@@ -49,10 +49,8 @@ function getCircleCircumference(radius) {
  *  10, 0  => 5
  *  -3, 3  => 0
  */
-function getAverage(/* value1, value2 */) {
-  throw new Error('Not implemented');
-  /* const sum = value1 + value2;
-  return sum / 2; */
+function getAverage(value1, value2) {
+  return (value1 + value2) / 2;
 }
 
 /**
